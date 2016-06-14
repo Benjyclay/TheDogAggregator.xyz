@@ -20,12 +20,14 @@ class VideoController extends Controller
     	return view('welcome')->with($videoData);
     }
 
+    // for Ajx call to send like to database
     public function like(Video $video)
     {
     	$video->like();
     	return;
     }
 
+    // for Ajx call to send dislike to database
     public function dislike(Video $video)
     {
     	$video->dislike();

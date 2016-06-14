@@ -43,7 +43,7 @@ class Video extends Model
 
     public function getVideo($ip){
     	//Check if User has visited Before by IP
-    	$numberOfUsersWithIP = \DB::table('Users')->where('ip_address', $ip)->count();
+    	$numberOfUsersWithIP = \DB::table('users')->where('ip_address', $ip)->count();
     	
     	//If they have not insert into DB
     	if($numberOfUsersWithIP == 0){

@@ -82,7 +82,7 @@
 var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
 
 
-var base_url = 'http://localhost'
+var base_url = 'http://thedogaggregator.xyz'
 
         $("document").ready(function(){
             $("#like").submit(function(e){

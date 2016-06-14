@@ -9,6 +9,8 @@ use Carbon\Carbon;
 
 class User extends Model
 {
+	protected $table = 'users';
+	
     public static function insertUserIntoDB($ip)
     {
         \DB::table('users')->insert([
